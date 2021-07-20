@@ -1,0 +1,26 @@
+GET http://localhost:3002/trackedPlayers
+
+###
+
+POST http://localhost:3002/trackedPlayers
+Content-Type: application/json
+
+{
+  "idRef": 10,
+  "firstName": "Harry",
+  "lastName": "Kane",
+  "webName": "Kane",
+  "teamID": 7,
+  "form": "7.7",
+  "totalPoints": 400,
+  "lastMatchPoints": 20,
+  "cost": 112
+  }
+
+###
+
+DELETE http://localhost:3002/trackedPlayers/10
+
+###
+
+GET http://localhost:3002/players/10
